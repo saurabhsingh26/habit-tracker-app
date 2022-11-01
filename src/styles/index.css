@@ -1,0 +1,81 @@
+ body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.habits{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.habit-left{
+  display: flex;
+  align-items: center;
+}
+
+.day-complete{
+  color: #767475;
+  font-size:small;
+}
+.habit-right{
+  display: flex;
+  align-items: center;
+}
+.log-btn{
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 10px;
+}
+.log-btn:hover{
+  color: white;
+}
+
+.days-container{
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+.day-container{
+  height: 100px;
+  width: 150px;
+  background-color: #F7F7F9;
+  border-radius: 20px;
+  padding: 5px;
+}
+p{
+  margin: 0%;
+}
+.circle-icon{
+  font-size: 24px;
+  margin: 5px 11px;
+  cursor: pointer;
+}
+.active{
+  color: #0B5ED7 ;
+}
+.habit-right img{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
