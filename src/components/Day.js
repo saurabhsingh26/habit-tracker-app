@@ -5,12 +5,15 @@ import { ToastContainer,toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Day = ({day}) => {
+  // Today's date
   const today=new Date();
+  // Day from today's date
   const todayDay=today.getDay();
   const dispatch=useDispatch();
   const date=new Date(day.yyyy,day.mm,day.dd);
   const done=()=>{
     if(day.id>todayDay){
+      // react toast for notification
       toast.warn('You cannot change your next days status', {
         position: "top-right",
         autoClose: 2000,
@@ -23,6 +26,7 @@ const Day = ({day}) => {
         });
       return;
     }
+    // calling habitDone from reducer
     dispatch(habitDone(day.id));
   }
   const notDone=()=>{
@@ -39,6 +43,7 @@ const Day = ({day}) => {
         });
       return;
     }
+    // calling habitNotDone from reducer
     dispatch(habitNotDone(day.id))
   }
   const none=()=>{
@@ -55,6 +60,7 @@ const Day = ({day}) => {
         });
       return;
     }
+    // calling habitNone from reducer
     dispatch(habitNone(day.id));
   }
   

@@ -10,6 +10,7 @@ function AddHabit(){
   const handleSave=(e)=>{
     const habitName=document.getElementById("habitName").value;
     dispatch(addHabit(habitName));
+    // react toast for notification
     toast.success('Habit added successfully', {
         position: "top-right",
         autoClose: 2000,
